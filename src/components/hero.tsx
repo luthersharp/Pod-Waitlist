@@ -1,15 +1,11 @@
 import Image from "next/image"
 import mockup from '/public/images/desktopmocuup.png'
-import LayoutEffect from "@/components/layouteffect"
 import SubscribeForm from "@/components/subscribeform"
 
 const Hero = ()=> {
    return (
 
-      <LayoutEffect isInviewState={{
-         trueState: "opacity-100 -translate-y-0",
-         falseState: "opacity-0 -translate-y-3"
-     }}>
+
          <section className=" lg:p-5 py-1 px-3 overflow-hidden duration-300 ease-in">
              <div className="custom-screen items-center gap-12 text-gray-600 md:flex">
                  <div className='flex-none space-y-5 max-w-2xl'>
@@ -34,7 +30,7 @@ const Hero = ()=> {
                  </div>
              </div>
          </section>
-         </LayoutEffect>
+
    )
 }
 export default Hero
